@@ -2,19 +2,33 @@
 
 This repository contains my Java learning journey.
 
-## Completed Problems
-
-### Day 1 - Basics
-
-- Largest Of Three Numbers
-- Grade Calculator
-- Multiplication Table
-
 ## Goals
 
-- Learn Java Fundamentals
-- Improve Problem Solving
-- Build Projects
-- Prepare for Interviews
+* Learn Java Fundamentals
+* Improve Problem Solving
+* Build GitHub Consistency
+* Prepare for Placements and Interviews
 
-Author: Saravana
+## Completed
+
+### Basics
+
+* Largest Of Three Numbers
+* Grade Calculator
+* Multiplication Table
+
+### Arrays
+
+* Sum Of Array
+* Largest Element In Array
+* Smallest Element In Array
+* Average Of Array
+* Even Or Odd In Array
+
+## Current Progress
+
+Completed Problems: 8
+
+## Author
+
+Saravana
