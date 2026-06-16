@@ -1,7 +1,7 @@
 // Checks whether an element in the array is even or odd. 
 // author - Saravana
 import java.util.Scanner;
-import java.util.Arrays;
+
 import java.util.ArrayList;
 
 public class even_or_odd_in_array {
@@ -19,6 +19,7 @@ public class even_or_odd_in_array {
      for(int i = 0; i < a; i++){
             b[i] = sc.nextInt();
         }
+          sc.close();
     ArrayList<Integer> even = new ArrayList<>();
 ArrayList<Integer> odd = new ArrayList<>();
 
@@ -33,5 +34,6 @@ for (int i = 0; i < a; i++) {
 System.out.println("Even numbers: " + even);
 System.out.println("Odd numbers: " + odd);   
     }
+  
 
 }
