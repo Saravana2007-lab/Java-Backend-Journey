@@ -1,6 +1,5 @@
 // Mini Calculator
 // Author - Saravana
-package Methods;
 
 import java.util.Scanner;
 
@@ -35,7 +34,8 @@ public class Mini_calculator {
 
             System.out.print("Enter operation (1.+,2. -,3. *,4. /): ");
             int op = scanner.nextInt();
-
+   scanner.close();
+        
             float result;
             switch (op) {
                 case '+':
@@ -53,11 +53,11 @@ public class Mini_calculator {
                 default:
                     System.out.println("Unknown operation: " + op);
                     return;
+                    
             }
 
             System.out.println("Result: " + result);
         
-            scanner.close();
-        
+         
     }
 }

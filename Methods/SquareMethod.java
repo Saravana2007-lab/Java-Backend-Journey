@@ -1,6 +1,6 @@
 // Square Method
 // Author - Saravana
-package Methods;
+
 
 public class SquareMethod {
     public static int square(int number){

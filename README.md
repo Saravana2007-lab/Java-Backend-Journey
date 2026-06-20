@@ -51,6 +51,13 @@ This repository contains my Java learning journey as a BCA student.
 * Even Check Method
 * Mini Calculator
 
+### Method Overloading
+
+* Addition Overloading
+* Area Calculator Overloading
+* Display Method Overloading
+* Employee Salary Calculator
+
 ---
 
 ## Progress
@@ -60,8 +67,8 @@ This repository contains my Java learning journey as a BCA student.
 | Basics         | 3         |
 | Arrays         | 10        |
 | Strings        | 7         |
-| Methods        | 5         |
-| Total Programs | 25        |
+| Methods        | 9         |
+| Total Programs | 29        |
 
 ---
 
@@ -75,44 +82,15 @@ This repository contains my Java learning journey as a BCA student.
 | 17 Jun 2026 | Day 4 | String Fundamentals                    |
 | 18 Jun 2026 | Day 5 | String Problem Solving & Anagram Check |
 | 19 Jun 2026 | Day 6 | Methods                                |
+| 20 Jun 2026 | Day 7 | Method Overloading                     |
 
-Current Streak: **6 Days 🔥**
-
----
-
-## Latest Progress
-
-### Day 6 - Methods (19 Jun 2026)
-
-**Programs Completed**
-
-* Greeting Method
-* Square Method
-* Maximum Number Method
-* Even Check Method
-* Mini Calculator
-
-**Mistakes Made**
-
-* Initially ignored a return value
-* Used generic variable names in some methods
-* Switch-case type mismatch in calculator
-
-**Key Learning**
-
-* Methods and code reusability
-* Parameters vs Arguments
-* Return values
-* Boolean methods
-* Method design principles
-
-**Score:** 9.3/10
+Current Streak: **7 Days 🔥**
 
 ---
 
 ## Upcoming Topics
 
-* Method Overloading
+* Arrays and Methods
 * Recursion
 * Searching Algorithms
 * Sorting Algorithms
@@ -134,10 +112,14 @@ Current Streak: **6 Days 🔥**
 
 ```text
 java-100-days/
-├── Basics/
-├── Arrays/
-├── Strings/
-├── Methods/
+├── Day-01-Java-Basics/
+├── Day-02-Arrays-Foundation/
+├── Day-03-Array-Problem-Solving/
+├── Day-04-String-Fundamentals/
+├── Day-05-String-Problem-Solving/
+├── Day-06-Methods/
+├── Day-07-Method-Overloading/
+├── logs/
 └── README.md
 ```
 

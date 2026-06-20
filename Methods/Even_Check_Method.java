@@ -1,6 +1,6 @@
 // Even Check Method
 // Author - Saravana
-package Methods;
+
 
 import java.util.Scanner;
 

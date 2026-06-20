@@ -1,4 +1,4 @@
-package Methods;
+
 
 public class Maximum_of_Two_Numbers {
     public static int max(int a,int b){

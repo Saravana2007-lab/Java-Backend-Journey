@@ -1,6 +1,6 @@
 // Greeting Method
 // Author - Saravana
-package Methods;
+
 
 public class GreetingMethod {
 
