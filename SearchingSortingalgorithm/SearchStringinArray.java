@@ -1,4 +1,4 @@
-package searchingalgorithms;
+package SearchingSortingalgorithm;
 
 public class SearchStringinArray {
     public static int searchString(String[] arr, String target) {
@@ -30,7 +30,6 @@ public class SearchStringinArray {
     public static void main(String[] args) {
         String[] languages = {"Java", "Python", "C", "JavaScript"};
         
-        // Test 1: Search for "Python"
         
         int result = searchString(languages, "Python");
         

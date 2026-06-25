@@ -1,4 +1,4 @@
-package searchingalgorithms;
+package SearchingSortingalgorithm;
 
 public class CheckIfArraySorted {
 

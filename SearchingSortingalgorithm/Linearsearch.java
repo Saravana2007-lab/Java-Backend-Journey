@@ -1,6 +1,6 @@
 // Linear Search Using Method
 // Author - Saravana
-package searchingalgorithms;
+package SearchingSortingalgorithm;
 
 public class Linearsearch{
     public static int linearSearch(int[] arr, int target){
