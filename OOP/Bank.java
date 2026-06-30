@@ -1,4 +1,4 @@
-package OOP;
+
 import java.util.Scanner; 
 class Branch{
     Scanner sc = new Scanner(System.in);
