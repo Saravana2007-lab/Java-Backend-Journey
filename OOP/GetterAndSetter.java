@@ -1,11 +1,11 @@
 
 import java.util.Scanner;
 
-class Student {
+class Students {
     private String name;
     private int age;
 
-    Student(String name, int age) {
+    Students(String name, int age) {
         setName(name);
         setAge(age);
     }
@@ -47,7 +47,7 @@ public class GetterAndSetter {
         System.out.print("Enter your age: ");
         int age = sc.nextInt();
 
-        Student student = new Student(name, age);
+        Students student = new Students(name, age);
 
         System.out.println("Name: " + student.getName());
         System.out.println("Age: " + student.getAge());
