@@ -8,6 +8,7 @@ public class Consonants {
         System.out.println("enter a word");
         String word = sc.nextLine().toLowerCase();
         int consonants = 0;
+        
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
             if (ch >= 'a' && ch <= 'z' && ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u') {

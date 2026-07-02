@@ -1,10 +1,28 @@
 # ☕ Java 100 Days Challenge
 
+![Java](https://img.shields.io/badge/Language-Java-red)
+![Challenge](https://img.shields.io/badge/Challenge-100_Days-orange)
+![Status](https://img.shields.io/badge/Status-In_Progress-brightgreen)
+![Programs](https://img.shields.io/badge/Programs-60+-blue)
+
 Welcome to my **Java 100 Days Challenge** repository.
 
-I am documenting my journey from Java fundamentals to backend development while building strong programming, problem-solving, and software engineering skills.
+This repository documents my journey from Java fundamentals to backend development through daily coding, interview preparation, problem solving, and project building.
 
-> **Every topic includes multiple practice programs, code reviews, and mini projects to reinforce real software engineering concepts rather than just syntax.**
+> **Goal:** Build strong software engineering fundamentals instead of memorizing Java syntax.
+
+---
+
+# 📚 Quick Navigation
+
+- ⭐ Featured Projects
+- 📊 Progress Statistics
+- 📚 Current Learning
+- ✅ Completed Topics
+- 📅 Challenge Timeline
+- 🏆 Milestones
+- 🚀 Upcoming Topics
+- 📂 Repository Structure
 
 ---
 
@@ -18,54 +36,65 @@ I am documenting my journey from Java fundamentals to backend development while 
 
 ---
 
-# 🎯 Objectives
+# ⭐ Featured Projects
 
-* Master Core Java
-* Write clean and professional code
-* Build consistency through daily coding
-* Improve problem-solving skills
-* Prepare for software engineering interviews
-* Build a strong GitHub portfolio
+| Project | Concepts |
+|---------|----------|
+| ⭐ College Management System | Inheritance, Encapsulation, Static, Searching, Collections |
+| ⭐ Shopping Cart System | Encapsulation, Constructors, Validation |
+| ⭐ Mobile Phone Simulator | Encapsulation, Business Logic |
+| ⭐ Password Manager | Encapsulation, String Handling |
+| ⭐ Bank Account System | Static Variables & Methods |
+| ⭐ School Management System | Inheritance & super Keyword |
 
 ---
 
 # 📊 Progress Statistics
 
-| Category         |                    Progress |
-| ---------------- | --------------------------: |
-| Java Challenge   |                Day 14 / 100 |
-| Current Streak   |                  14 Days 🔥 |
-| Programs Written |                          46 |
-| Current Module   | Object-Oriented Programming |
+| Category | Progress |
+|----------|---------:|
+| Java Challenge | **Day 16 / 100** |
+| Current Streak | **16 Days 🔥** |
+| Programs Written | **60+** |
+| Projects Completed | **6** |
+| Current Module | **Object-Oriented Programming** |
+
+---
+
+# 🎯 Current Focus
+
+✅ Core Java
+
+⬜ Advanced Java
+
+⬜ Spring Boot
+
+⬜ Backend Development
 
 ---
 
 # 📚 Current Learning
 
-### Current Module
+## Object-Oriented Programming
 
-**Object-Oriented Programming**
+### ✅ Completed
 
-### Completed
+- Classes & Objects
+- Constructors
+- Constructor Overloading
+- Constructor Chaining
+- this Keyword
+- Static Variables
+- Static Methods
+- Encapsulation
+- Inheritance
 
-* ✅ Classes
-* ✅ Objects
-* ✅ Instance Variables
-* ✅ Methods
-* ✅ Constructors
-* ✅ Constructor Overloading
-* ✅ this Keyword
-* ✅ Constructor Chaining
-* ✅ Static Variables
-* ✅ Static Methods
+### 🔜 Next
 
-### Next
-
-* 🔜 Encapsulation
-* 🔜 Inheritance
-* 🔜 Polymorphism
-* 🔜 Abstraction
-* 🔜 Interfaces
+- Method Overriding
+- Polymorphism
+- Abstraction
+- Interfaces
 
 ---
 
@@ -73,166 +102,193 @@ I am documenting my journey from Java fundamentals to backend development while 
 
 ## Java Fundamentals
 
-* Variables
-* Data Types
-* Input / Output
-* Operators
-* Conditional Statements
-* Loops
+- Variables
+- Data Types
+- Input / Output
+- Operators
+- Conditional Statements
+- Loops
 
 ---
 
 ## Arrays
 
-* Sum of Array
-* Largest Element
-* Smallest Element
-* Average of Array
-* Even & Odd Elements
-* Reverse Array
-* Second Largest Element
-* Frequency Count
-* Sum of Minimum & Maximum
-* Linear Search
-* Binary Search
+- Sum of Array
+- Largest Element
+- Smallest Element
+- Average of Array
+- Even & Odd Elements
+- Reverse Array
+- Second Largest Element
+- Frequency Count
+- Linear Search
+- Binary Search
 
 ---
 
 ## Strings
 
-* Reverse String
-* Palindrome Check
-* Count Vowels
-* Count Consonants
-* Count Words
-* Character Frequency
-* Anagram Check
+- Reverse String
+- Palindrome Check
+- Count Vowels
+- Count Consonants
+- Count Words
+- Character Frequency
+- Anagram Check
 
 ---
 
 ## Methods
 
-* Greeting Method
-* Square Method
-* Maximum Number
-* Even Check
-* Mini Calculator
-* Arrays with Methods
+- Greeting Method
+- Square Method
+- Maximum Number
+- Even Check
+- Mini Calculator
+- Arrays with Methods
 
 ---
 
 ## Method Overloading
 
-* Addition Overloading
-* Area Calculator
-* Display Method
-* Employee Salary Calculator
+- Addition Overloading
+- Area Calculator
+- Display Method
+- Employee Salary Calculator
 
 ---
 
-## Searching Algorithms
+## Searching
 
-* Linear Search
-* Binary Search
-* Search String in Array
-
----
-
-## Sorting Algorithms
-
-* Bubble Sort
-* Bubble Sort Statistics
-* Selection Sort
-* Selection Sort Statistics
-* Insertion Sort
+- Linear Search
+- Binary Search
+- Search String in Array
 
 ---
 
-## Object-Oriented Programming
+## Sorting
 
-### Classes & Objects
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
 
-* Classes
-* Objects
-* Instance Variables
-* Methods inside Classes
+---
 
-### Constructors
+# ☕ Object-Oriented Programming
 
-* Default Constructor
-* Parameterized Constructor
-* Constructor Overloading
-* Constructor Chaining
-* this Keyword
+## Classes & Objects
 
-### Static
+- Classes
+- Objects
+- Instance Variables
+- Methods
 
-* Static Variables
-* Static Methods
-* Student Counter
-* Bank Account System
-* Employee Management System
+## Constructors
+
+- Default Constructor
+- Parameterized Constructor
+- Constructor Overloading
+- Constructor Chaining
+- this Keyword
+
+## Static
+
+- Student Counter
+- Calculator
+- Bank Account System
+- Employee Management System
+
+## Encapsulation
+
+- Student Getter & Setter
+- Password Manager
+- Shopping Cart System
+- Mobile Phone Simulator
+- Bank Account Validation
+
+## Inheritance
+
+- Animal Inheritance
+- Person & Student
+- Vehicle & Car
+- Constructor Inheritance
+- School Management System
 
 ---
 
 # 📅 Challenge Timeline
 
-| Date        | Day    | Topic                               |
-| ----------- | ------ | ----------------------------------- |
-| 14 Jun 2026 | Day 1  | Java Fundamentals                   |
-| 15 Jun 2026 | Day 2  | Arrays Foundation                   |
-| 16 Jun 2026 | Day 3  | Array Problem Solving               |
-| 17 Jun 2026 | Day 4  | String Fundamentals                 |
-| 18 Jun 2026 | Day 5  | String Problem Solving              |
-| 19 Jun 2026 | Day 6  | Methods                             |
-| 20 Jun 2026 | Day 7  | Method Overloading                  |
-| 21 Jun 2026 | Day 8  | Arrays with Methods                 |
-| 22 Jun 2026 | Day 9  | 2D Arrays                           |
-| 23 Jun 2026 | Day 10 | Searching Algorithms                |
-| 24 Jun 2026 | Day 11 | Bubble Sort                         |
-| 25 Jun 2026 | Day 12 | Selection Sort & Insertion Sort     |
-| 26 Jun 2026 | Day 13 | Classes, Objects & Methods          |
-| 27 Jun 2026 | Day 14 | Constructors, this Keyword & Static |
+| Date | Day | Topic |
+|------|-----|------------------------------|
+| 14 Jun 2026 | Day 1 | Java Fundamentals |
+| 15 Jun 2026 | Day 2 | Arrays |
+| 16 Jun 2026 | Day 3 | Array Problems |
+| 17 Jun 2026 | Day 4 | Strings |
+| 18 Jun 2026 | Day 5 | String Problems |
+| 19 Jun 2026 | Day 6 | Methods |
+| 20 Jun 2026 | Day 7 | Method Overloading |
+| 21 Jun 2026 | Day 8 | Arrays with Methods |
+| 22 Jun 2026 | Day 9 | 2D Arrays |
+| 23 Jun 2026 | Day 10 | Searching |
+| 24 Jun 2026 | Day 11 | Bubble Sort |
+| 25 Jun 2026 | Day 12 | Selection Sort & Insertion Sort |
+| 26 Jun 2026 | Day 13 | Classes & Objects |
+| 27 Jun 2026 | Day 14 | Constructors, this & Static |
+| 01 Jul 2026 | Day 15 | Encapsulation |
+| 02 Jul 2026 | Day 16 | Inheritance |
 
 ---
 
 # 🏆 Milestones
 
-* ✅ 25 Programs
-* ⬜ 50 Programs
-* ⬜ 75 Programs
-* ⬜ 100 Programs
-* ⬜ First Mini Project
-* ⬜ Core Java Completed
-* ⬜ Spring Boot Started
+- ✅ 25 Programs
+- ✅ 50 Programs
+- ⬜ 75 Programs
+- ⬜ 100 Programs
+- ⬜ Core Java Completed
+- ⬜ Spring Boot Started
 
 ---
 
 # 🚀 Upcoming Topics
 
-* Encapsulation
-* Inheritance
-* Polymorphism
-* Abstraction
-* Interfaces
-* Collections Framework
-* Exception Handling
-* File Handling
-* Multithreading
-* Java 8 Features
-* JDBC
-* Maven
-* Spring Boot
+- Method Overriding
+- Polymorphism
+- Abstraction
+- Interfaces
+- Collections Framework
+- Exception Handling
+- File Handling
+- Multithreading
+- Java 8 Features
+- JDBC
+- Maven
+- Spring Boot
 
 ---
 
-# 🏗 Upcoming Mini Projects
+# 🚀 Future Portfolio Projects
 
-* Student Management System
-* Bank Management System
-* Library Management System
-* Employee Management System
-* Course Registration System
+- College Management System ✅
+- Library Management System
+- ATM Simulator
+- Hospital Management System
+- Banking System
+- Food Ordering System
+- E-Commerce System
+- Student Management System
+- Chat Application
+
+---
+
+# 💻 Tech Stack
+
+- Java
+- VS Code
+- Git
+- GitHub
+
+*(Spring Boot, Maven, MySQL and Docker will be added later in this challenge.)*
 
 ---
 
@@ -246,8 +302,7 @@ Java-100-Days
 ├── Strings
 ├── Methods
 ├── MethodOverloading
-├── Searching
-├── Sorting
+├── SearchingSorting
 │
 ├── OOP
 │   ├── 01_Classes_Objects
@@ -255,37 +310,43 @@ Java-100-Days
 │   ├── 03_Static
 │   ├── 04_Encapsulation
 │   ├── 05_Inheritance
-│   ├── 06_Polymorphism
-│   ├── 07_Abstraction
-│   ├── 08_Interface
-│   └── 09_Mini_Project
+│   ├── 06_Method_Overriding
+│   ├── 07_Polymorphism
+│   ├── 08_Abstraction
+│   ├── 09_Interfaces
+│
+├── Projects
+│   ├── 01_CollegeManagementSystem
+│   ├── 02_LibraryManagementSystem
+│   ├── 03_ATMSimulator
+│   ├── 04_HospitalManagementSystem
+│   └── ...
 │
 ├── Collections
 ├── ExceptionHandling
 ├── FileHandling
 ├── Multithreading
-├── Projects
 ├── Logs
 └── README.md
 ```
 
 ---
 
-# 📌 Learning Rules
+# 📌 Learning Principles
 
-* Learn concepts through coding.
-* Write multiple programs for every topic.
-* Focus on clean, readable, and maintainable code.
-* Follow Java naming conventions.
-* Review every solution.
-* Build GitHub-quality implementations.
-* Prioritize understanding over memorization.
+- Learn through building projects.
+- Understand concepts before memorizing syntax.
+- Write clean and maintainable code.
+- Follow Java naming conventions.
+- Review every solution.
+- Build GitHub-quality implementations.
+- Focus on software engineering, not just programming.
 
 ---
 
 # 📈 Long-Term Goal
 
-Complete Core Java, Advanced Java, Spring Boot, and Backend Development while building a professional GitHub portfolio and preparing for software engineering interviews.
+Complete Core Java, Advanced Java, Spring Boot, Data Structures & Algorithms, and Backend Development while building a professional GitHub portfolio for software engineering roles.
 
 ---
 
@@ -293,4 +354,4 @@ Complete Core Java, Advanced Java, Spring Boot, and Backend Development while bu
 
 **Saravana**
 
-**Java • Problem Solving • Software Engineering**
+**Java • Backend Development • Software Engineering**
