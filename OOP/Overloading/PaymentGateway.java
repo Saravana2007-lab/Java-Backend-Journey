@@ -28,7 +28,6 @@ class CreditCard extends Payment {
     }
 }
 
-// Child class - UPI
 class UPI extends Payment {
 
     UPI(String paymentId, double amount) {
@@ -42,7 +41,6 @@ class UPI extends Payment {
     }
 }
 
-// Child class - NetBanking
 class NetBanking extends Payment {
 
     NetBanking(String paymentId, double amount) {
