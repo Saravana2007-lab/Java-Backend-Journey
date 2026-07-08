@@ -3,12 +3,12 @@ interface Deliverable {
     void deliverOrder();
 }
 
-// Step 2: Trackable interface
+
 interface Trackable {
     void trackLocation();
 }
 
-// Step 3: Classes implementing interfaces
+
 
 class BikeDelivery implements Deliverable {
     public void deliverOrder() {
@@ -40,11 +40,10 @@ class PremiumDelivery implements Deliverable, Trackable {
     }
 }
 
-// Step 4: Main class
 public class FoodDeliverySystem {
     public static void main(String[] args) {
         
-        // Deliverable array
+      
         Deliverable[] deliveries = {
             new BikeDelivery(),
             new DroneDelivery(),
@@ -56,8 +55,7 @@ public class FoodDeliverySystem {
         }
         
         System.out.println("-------------------------");
-        
-        // Trackable array
+  
         Trackable[] trackers = {
             new DroneDelivery(),
             new RobotDelivery(),
