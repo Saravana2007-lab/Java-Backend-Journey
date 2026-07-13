@@ -8,7 +8,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
+
 
 class Employee {
     Scanner sc = new Scanner(System.in);
@@ -96,28 +96,91 @@ catch(IOException e){
 System.out.println("Error:  "+ e.getMessage());
 }
 }
-void delete(){
-    try{
-        System.out.println("enter the id ");
-        
-        File file = new File("temp.txt");
-        BufferedReader br =new BufferedReader( new FileReader("employee.txt"))
-         BufferedWriter bw = new BufferedWriter(new FileWriter("temp.txt"));
-         BufferedWriter b = new BufferedWriter(new FileWriter("employee.txt"));
-String line;
-while((line =)){}
-    }
-    catch(IOExceptionm e){
+void delete() {
+    try {
+        System.out.println("Enter the id to delete: ");
+        String ID = sc.nextLine();
 
+        File inputFile = new File("employee.txt");
+        File tempFile = new File("temp.txt");
+
+        try (BufferedReader br = new BufferedReader(new FileReader(inputFile));
+             BufferedWriter bw = new BufferedWriter(new FileWriter(tempFile))) {
+
+            String line;
+            boolean found = false;
+
+            while ((line = br.readLine()) != null) {
+                String[] data = line.split(",");
+                if (data.length > 0 && data[0].equals(ID)) {
+                    found = true; 
+                    continue;
+                }
+                bw.write(line);
+                bw.newLine();
+            }
+
+            if (found) {
+                System.out.println("Record deleted successfully.");
+            } else {
+                System.out.println("No record found with ID: " + ID);
+            }
+        }
+
+        
+        if (inputFile.delete()) {
+            tempFile.renameTo(inputFile);
+        }
+
+    } catch (IOException e) {
+        System.err.println("Error: " + e.getMessage());
     }
 }
+
 }
 
 public class EmployeeManagementSystem {
     public static void main(String[] args) {
         Employee emp = new Employee();
-             emp.add();
-                emp.View();
-      
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("\n===== Employee Management System =====");
+            System.out.println("1. Create File");
+            System.out.println("2. Add Employee");
+            System.out.println("3. View Employees");
+            System.out.println("4. Search Employee");
+            System.out.println("5. Delete Employee");
+            System.out.println("6. Exit");
+            System.out.print("Enter your choice: ");
+
+            int choice = sc.nextInt();
+            sc.nextLine(); 
+
+            switch (choice) {
+                case 1:
+                    emp.create();
+                    break;
+                case 2:
+                    emp.add();
+                    break;
+                case 3:
+                    emp.View();
+                    break;
+                case 4:
+                    emp.Search();
+                    break;
+                case 5:
+                    emp.delete();
+                    break;
+                case 6:
+                    System.out.println("Exiting program...");
+                    sc.close();
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
     }
 }
