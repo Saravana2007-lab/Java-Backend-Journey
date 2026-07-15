@@ -8,7 +8,7 @@
 
 > 🚀 Originally started as a **Java 100 Days Challenge**.
 >
-> This repository has evolved into a long-term **Java Backend Engineering Portfolio**, documenting my journey from Java fundamentals to professional backend development using Core Java, Advanced Java, Spring Boot, and Software Engineering principles.
+> Today, it has evolved into a long-term **Java Backend Engineering Portfolio**, documenting my journey from Java fundamentals to building production-ready backend applications using Core Java, Advanced Java, Spring Boot, and modern software engineering practices.
 
 ---
 
@@ -16,46 +16,49 @@
 
 Hi, I'm **Saravana**.
 
-- 🎓 Bachelor of Computer Applications (BCA)
-- ☕ Aspiring Java Backend Software Engineer
-- 🌱 Currently mastering Core Java
-- 🎯 Long-term Goal: Spring Boot Backend Developer
+* 🎓 Bachelor of Computer Applications (BCA)
+* ☕ Aspiring Java Backend Software Engineer
+* 💻 Passionate about Software Engineering and Backend Development
+* 🌱 Currently mastering Core Java
+* 🎯 Long-term Goal: Become a Spring Boot Backend Engineer capable of building scalable, production-ready applications.
 
-This repository contains my learning journey, interview preparation, software engineering practice, and backend project development.
+This repository is my public engineering journal where I continuously improve my programming, software design, backend architecture, and problem-solving skills.
 
 ---
 
 # 🎯 Repository Goals
 
-This repository is focused on building **real software engineering skills**, not just completing Java syntax exercises.
+This repository is focused on becoming a **software engineer**, not just learning Java syntax.
 
-## Goals
+### Goals
 
-- Learn Java deeply
-- Build production-style projects
-- Practice clean code
-- Follow software engineering principles
-- Prepare for technical interviews
-- Build a professional GitHub portfolio
-- Become job-ready for Java Backend Development
+* Master Core Java
+* Learn professional software engineering practices
+* Build production-style backend projects
+* Practice clean architecture and maintainable code
+* Improve problem-solving skills
+* Prepare for technical interviews
+* Build a professional GitHub portfolio
+* Become job-ready as a Java Backend Developer
 
 ---
 
 # 📈 Progress
 
-| Category | Status |
-|----------|---------|
-| Core Java | 🟡 In Progress |
-| Advanced Java | ⬜ Upcoming |
-| Spring Boot | ⬜ Planned |
-| Backend Development | ⬜ Planned |
+| Category            | Status         |
+| ------------------- | -------------- |
+| Core Java           | 🟡 In Progress |
+| Collections         | 🟡 Learning    |
+| Advanced Java       | ⬜ Upcoming     |
+| Spring Boot         | ⬜ Planned      |
+| Backend Engineering | ⬜ Planned      |
 
 ## Overall Core Java Progress
 
 ```text
-██████████████████░░░░░░░░░░░
+██████████████████████░░░░░░
 
-≈ 60%
+≈ 72%
 ```
 
 ---
@@ -66,97 +69,160 @@ This repository is focused on building **real software engineering skills**, not
 
 ### Java Fundamentals
 
-- Variables
-- Data Types
-- Input / Output
-- Operators
-- Conditional Statements
-- Loops
+* Variables
+* Data Types
+* Input / Output
+* Operators
+* Conditional Statements
+* Loops
+
+---
 
 ### Arrays
 
-- 1D Arrays
-- 2D Arrays
-- Searching
-- Sorting
+* 1D Arrays
+* 2D Arrays
+* Searching
+* Sorting
+
+---
 
 ### Strings
 
-- Reverse
-- Palindrome
-- Frequency
-- Word Count
-- Anagram
+* Reverse
+* Palindrome
+* Frequency
+* Word Count
+* Anagram
+
+---
 
 ### Methods
 
-- Methods
-- Method Overloading
+* Methods
+* Method Overloading
+
+---
 
 ### Object-Oriented Programming
 
-- Classes & Objects
-- Constructors
-- Static
-- Encapsulation
-- Inheritance
-- Method Overriding
-- Runtime Polymorphism
-- Abstraction
-- Interfaces
+* Classes & Objects
+* Constructors
+* Static
+* Encapsulation
+* Inheritance
+* Method Overriding
+* Runtime Polymorphism
+* Abstraction
+* Interfaces
+
+---
 
 ### Core Java APIs
 
-- Packages
-- Access Modifiers
-- Exception Handling
-- File Handling (Basics)
+* Packages
+* Access Modifiers
+* Exception Handling
+* File Handling
+
+  * File
+  * FileReader
+  * FileWriter
+  * BufferedReader
+  * BufferedWriter
+  * CRUD File Projects
+* Collections Framework
+
+  * Collection Interface
+  * List Interface
+  * ArrayList
+  * Generic Collections
+  * CRUD using ArrayList
 
 ---
 
 ## 🟡 Currently Learning
 
-- File Handling
-    - BufferedReader
-    - BufferedWriter
-    - try-with-resources
-    - File-based Projects
+### Collections Framework
+
+* ArrayList
+* CRUD Operations
+* Object Storage
+* Integration Projects
 
 ---
 
 ## 🔜 Upcoming
 
-- Collections Framework
-- Generics
-- Enums
-- Wrapper Classes
-- Java 8
-    - Lambda
-    - Streams
-    - Optional
-- Multithreading
-- Networking
-- JDBC
-- Maven
-- JUnit
-- Spring Boot
-- REST APIs
+* LinkedList
+* Vector
+* Stack
+* Queue
+* HashSet
+* LinkedHashSet
+* TreeSet
+* HashMap
+* LinkedHashMap
+* TreeMap
+* Generics
+* Enums
+* Wrapper Classes
+* Java 8
+
+  * Lambda Expressions
+  * Streams API
+  * Optional
+* Multithreading
+* Networking
+* JDBC
+* Maven
+* JUnit
+* Design Patterns
+* Spring Boot
+* REST APIs
+* Hibernate
+* Docker
 
 ---
 
-# ⭐ Featured Projects
+# 🏆 Featured Projects
 
-| Project | Concepts |
-|----------|----------|
-| ATM System | Exception Handling, OOP |
-| Library Management System | Interfaces, Abstraction |
-| Course Registration System | Packages |
-| Shopping Cart | Encapsulation |
-| Password Manager | Validation |
-| Mobile Phone Simulator | Encapsulation |
-| College Management System | Inheritance |
+| Project                     | Concepts                | Status     |
+| --------------------------- | ----------------------- | ---------- |
+| ATM System                  | Exception Handling, OOP | ✅          |
+| Shopping Cart               | Encapsulation           | ✅          |
+| Password Manager            | Validation              | ✅          |
+| Mobile Phone Simulator      | Encapsulation           | ✅          |
+| College Management System   | Inheritance             | ✅          |
+| Student Management System   | File Handling, CRUD     | ✅          |
+| Employee Management System  | File Handling           | ✅          |
+| Library Management System   | File Handling, OOP      | ✅          |
+| Book Inventory              | Collections, OOP        | ✅          |
+| Hospital Management System  | Collections, CRUD       | ✅          |
+| Course Registration System  | Collections             | 🚧         |
+| Inventory Management System | Collections             | 📅 Planned |
 
-More enterprise-style projects will be added as new topics are learned.
+---
+
+# 🏗 Software Engineering Skills
+
+Throughout this repository I practice professional development principles.
+
+* Object-Oriented Programming
+* Encapsulation
+* Inheritance
+* Polymorphism
+* Abstraction
+* Interfaces
+* Exception Handling
+* File-Based Persistence
+* CRUD Operations
+* Collection Framework
+* Layered Program Design
+* Clean Code
+* Code Refactoring
+* Debugging
+* Git Version Control
 
 ---
 
@@ -164,31 +230,39 @@ More enterprise-style projects will be added as new topics are learned.
 
 ## Languages
 
-- Java
+* Java
+
+---
 
 ## Core Java
 
-- OOP
-- Exception Handling
-- File Handling
-- Packages
-- Interfaces
-- Collections (Learning)
+* OOP
+* Collections
+* Exception Handling
+* File Handling
+* Packages
+* Interfaces
+
+---
 
 ## Tools
 
-- Git
-- GitHub
-- VS Code
+* Git
+* GitHub
+* VS Code
 
-Future additions
+---
 
-- Spring Boot
-- Maven
-- MySQL
-- Docker
-- Hibernate
-- JUnit
+## Future Technologies
+
+* Spring Boot
+* Maven
+* MySQL
+* Hibernate
+* Docker
+* JUnit
+* REST APIs
+* AWS
 
 ---
 
@@ -223,7 +297,10 @@ Java-100-Days
 │
 ├── Projects
 │   ├── ATMSystem
+│   ├── StudentManagementSystem
+│   ├── EmployeeManagementSystem
 │   ├── LibraryManagementSystem
+│   ├── BookInventory
 │   ├── CourseRegistrationSystem
 │   ├── HospitalManagementSystem
 │   ├── InventoryManagementSystem
@@ -235,59 +312,100 @@ Java-100-Days
 
 ---
 
+# 🏆 Portfolio Projects
+
+These are not one-time practice programs.
+
+Every project will continue evolving as I learn new technologies.
+
+### Evolution Roadmap
+
+```text
+Core Java
+      ↓
+Collections
+      ↓
+JDBC
+      ↓
+MySQL
+      ↓
+Spring Boot
+      ↓
+REST APIs
+      ↓
+Authentication
+      ↓
+Docker
+      ↓
+Cloud Deployment
+```
+
+Projects will gradually become production-ready backend applications.
+
+---
+
+# 🛤 Engineering Journey
+
+This repository documents my progression from writing beginner Java programs to building backend systems.
+
+```text
+Java Fundamentals
+        ✅
+Arrays
+        ✅
+Strings
+        ✅
+Methods
+        ✅
+OOP
+        ✅
+Exception Handling
+        ✅
+File Handling
+        ✅
+Collections
+        🟡
+Advanced Java
+        ⬜
+Spring Boot
+        ⬜
+Microservices
+        ⬜
+Cloud
+        ⬜
+```
+
+---
+
 # 📌 Software Engineering Principles
 
-Throughout this repository I follow professional development practices.
+Throughout this repository I follow professional engineering practices.
 
-- Understand concepts before syntax
-- Build projects instead of isolated programs
-- Follow Java naming conventions
-- Write clean and maintainable code
-- Separate business logic from presentation
-- Practice object-oriented design
-- Review and refactor code
-- Use Git for version control
-- Prepare for technical interviews
-
----
-
-# 🚀 Future Backend Projects
-
-As my Java knowledge grows, this repository will include larger backend systems.
-
-Planned projects include:
-
-- Library Management System
-- Hospital Management System
-- Hotel Management System
-- Food Delivery Backend
-- E-Commerce Backend
-- Banking System
-- Inventory Management System
-- Student Information System
-- CRM System
-- ERP System
-
-Eventually these projects will be rebuilt using:
-
-- Spring Boot
-- REST APIs
-- MySQL
-- Hibernate
-- Docker
+* Understand concepts before syntax
+* Learn APIs before solving problems
+* Build projects instead of isolated exercises
+* Practice object-oriented design
+* Separate business logic from presentation
+* Follow Java naming conventions
+* Write readable and maintainable code
+* Continuously refactor existing code
+* Use Git professionally
+* Think like a backend engineer
 
 ---
 
-# 📈 Long-Term Roadmap
+# 🚀 Long-Term Backend Roadmap
 
-```
+```text
 Core Java
-        ↓
-Advanced Java
         ↓
 Collections
         ↓
+Advanced Java
+        ↓
 JDBC
+        ↓
+MySQL
         ↓
 Maven
         ↓
@@ -295,22 +413,36 @@ Spring Boot
         ↓
 REST APIs
         ↓
-Database Design
+Hibernate
         ↓
-Backend Projects
+Docker
         ↓
-Interview Preparation
+AWS
         ↓
-Software Engineering Job
+Microservices
+        ↓
+AI-Powered Backend Engineering
 ```
+
+---
+
+# 📊 Repository Statistics
+
+* ✅ 100+ Java Programs (Growing)
+* ✅ 10+ Software Projects
+* ✅ Backend-Oriented Learning Path
+* ✅ Interview Preparation
+* ✅ Continuously Updated
 
 ---
 
 # 📖 Learning Philosophy
 
-I don't aim to simply finish Java.
+I don't aim to simply complete Java.
 
-The goal of this repository is to build the skills required to become a professional Java Backend Software Engineer through consistent learning, project development, software engineering practices, and continuous code improvement.
+My objective is to develop the knowledge, problem-solving ability, software engineering mindset, and backend development skills required to build scalable applications and become a professional Java Backend Software Engineer.
+
+Every topic I learn is reinforced through theory, hands-on coding, code reviews, and progressively larger projects that evolve alongside my technical skills.
 
 ---
 
@@ -318,4 +450,6 @@ The goal of this repository is to build the skills required to become a professi
 
 **Saravana**
 
-☕ Java • Backend Development • Software Engineering
+☕ Java • Backend Development • Software Engineering • Continuous Learning
+
+> *"Building strong engineering fundamentals today to build scalable backend systems tomorrow."*
