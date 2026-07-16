@@ -29,12 +29,18 @@ public class Course {
         return faculty;
     }
 
-    
+    public void displayCourseInfo() {
+        System.out.println("Course ID: " + courseId);
+        System.out.println("Course Name: " + courseName);
+        System.out.println("Credits: " + credits);
+        System.out.println("Faculty: " + faculty);
+    }
+
+    @Override
     public String toString() {
-        return "-----------------\n" +
-               "Course ID: " + courseId + "\n" +
-               "Course Name: " + courseName + "\n" +
-               "Credits: " + credits + "\n" +
-               "Faculty: " + faculty + "\n";
+        return "Course ID: " + courseId +
+               ", Name: " + courseName +
+               ", Credits: " + credits +
+               ", Faculty: " + faculty;
     }
 }

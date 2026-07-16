@@ -102,6 +102,25 @@ public class Main {
     
     hospital.addPatient(newPatient);
     break;
+case 10: 
+    System.out.print("Enter Doctor ID: ");
+    String did = sc.nextLine();
+    System.out.print("Enter Name: ");
+    String dname = sc.nextLine();
+    System.out.print("Enter Specialization: ");
+    String specialization = sc.nextLine();
+    System.out.print("Enter Experience (years): ");
+    double exp = sc.nextDouble();
+    sc.nextLine(); 
+
+    
+    Doctor newDoctor = new Doctor(did, dname, specialization, exp);
+
+    
+    hospital.AddDoctor(newDoctor);
+    break;
+
+                
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }

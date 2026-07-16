@@ -452,4 +452,3 @@ Every topic I learn is reinforced through theory, hands-on coding, code reviews,
 
 ☕ Java • Backend Development • Software Engineering • Continuous Learning
 
-> *"Building strong engineering fundamentals today to build scalable backend systems tomorrow."*

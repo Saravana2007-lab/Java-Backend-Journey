@@ -101,7 +101,7 @@ void adddoc(Doctor doc) {
             return;
         }
     }
-    patients.add(newPatient);
+    doctors.add(doc);
     System.out.println("Patient added successfully.");
 }
 }
