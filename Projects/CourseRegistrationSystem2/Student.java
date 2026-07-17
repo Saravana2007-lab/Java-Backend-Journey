@@ -13,10 +13,12 @@ public class Student {
         this.department = department;
     }
 
-    String getid() {
+    String getStudentid() {
         return studentId;
     }
-
+    String getStudentname(){
+        return name;
+    }
     @Override
     public String toString() {
         return "-----------------\n" +
