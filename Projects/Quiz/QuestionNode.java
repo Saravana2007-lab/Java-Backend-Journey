@@ -1,10 +1,18 @@
 package Projects.Quiz;
-import Projects.Quiz.*;
 class QuestionNode {
-int data;
-QuestionNode node;
+    question data;
+    QuestionNode next;
 
-}
-class QuizLinkedList{
-    QuestionNode qn = new QuestionNode(q1);
+    QuestionNode(question newQuestion){
+       this.data = newQuestion;
+       this.next = null;
+    }
+
+    public String getQuestion() { return data.getQuestion(); }
+    public String getOptionA() { return data.getOptionA(); }
+    public String getOptionB() { return data.getOptionB(); }
+    public String getOptionC() { return data.getOptionC(); }
+    public String getOptionD() { return data.getOptionD(); }
+    public char getAnswer() { return data.getAnswer(); }
+
 }
