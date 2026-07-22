@@ -21,19 +21,11 @@ public static void main(String[] args) {
             "Nihal",
             'a'
         );
-QuestionNode first = new QuestionNode(q1);
-QuestionNode second = new QuestionNode(q2);
-first.next = second;
-   QuestionNode current = first;
-        while (current != null) {
-   System.out.println("Q: " + ..getQuestion());
-System.out.println("A: " + current.getOptionA());
-System.out.println("B: " + current.getOptionB());
-System.out.println("C: " + current.getOptionC());
-System.out.println("D: " + current.getOptionD());
-  System.out.println("----------------------");
-  current = current.next;
-        }
+QuestionLists quiz = new QuestionLists();
+quiz.NewQuestion(q1);
+quiz.NewQuestion(q2);
+quiz.display();
+ quiz.SerachQuestion("Who is the Strong");
+    }
 }
 
-}
