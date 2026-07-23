@@ -9,9 +9,11 @@ class QuestionLists{
         if(head == null){
             head = newnode;
             tail = newnode;
+            prev = newnode;
         }
         else{
             tail.next = newnode;
+            prev = tail;
             tail = newnode;
         }
     }
@@ -31,18 +33,40 @@ void display() {
 void SerachQuestion(String question){
      QuestionNode current = head;
      int i =1;
-     boolean q = false;
+     boolean found = false;
 while(current != null){
     if(current.getQuestion().equals(question)){
        System.out.println("Question found at position " + i);
-        q = true;
+        found = true;
          break;
     }
     i++;
     current = current.next;
 }
-if(!q){
+if(!found){
 System.out.println("Question not found"); 
 }
+}
+
+void Delete(question q){
+    QuestionNode temp;
+      QuestionNode current = head;
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+        if(q.getQuestion().equals(head.getQuestion())){
+            temp =head;
+            head = head.next;
+        }
+        else{
+            while(current != null){
+                if(q.getQuestion().equals(current.getQuestion())){
+                    temp = current;
+                    current = current.next;
+                    prev =
+                }
+              }
+        }
 }
 }
