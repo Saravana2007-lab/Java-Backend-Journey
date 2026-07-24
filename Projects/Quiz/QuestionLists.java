@@ -9,11 +9,9 @@ class QuestionLists{
         if(head == null){
             head = newnode;
             tail = newnode;
-            prev = newnode;
         }
         else{
             tail.next = newnode;
-            prev = tail;
             tail = newnode;
         }
     }
@@ -50,23 +48,37 @@ System.out.println("Question not found");
 
 void Delete(question q){
     QuestionNode temp;
-      QuestionNode current = head;
+    QuestionNode current = head;
+    if (head == null) {
+        tail = null;
+        System.out.println("List is empty.");
+        return;
+    }
+    if(q.getQuestion().equals(head.getQuestion())){
+        temp = head;
+        head = head.next;
         if (head == null) {
-            System.out.println("List is empty.");
-            return;
+            tail = null;
         }
-        if(q.getQuestion().equals(head.getQuestion())){
-            temp =head;
-            head = head.next;
-        }
-        else{
-            while(current != null){
-                if(q.getQuestion().equals(current.getQuestion())){
-                    temp = current;
-                    current = current.next;
-                    prev =
+    }
+    else{
+        QuestionNode prev = null;
+        boolean found = false;
+        while(current != null){
+            if(q.getQuestion().equals(current.getQuestion())){
+                prev.next = current.next;
+                if(current == tail){
+                    tail = prev;
                 }
-              }
+                found = true;
+                break;
+            }
+            prev = current;
+            current = current.next;
         }
+        if(!found){
+            System.out.println("Question not found");
+        }
+    }
 }
 }

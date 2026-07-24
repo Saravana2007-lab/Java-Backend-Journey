@@ -2,11 +2,11 @@ package Projects.Quiz;
 class QuestionNode {
     question data;
     QuestionNode next;
-    QuestionNode prev;
+
     QuestionNode(question newQuestion){
        this.data = newQuestion;
        this.next = null;
-       this.prev = null;
+     
     }
 
     public String getQuestion() { return data.getQuestion(); }

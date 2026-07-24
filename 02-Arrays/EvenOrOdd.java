@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import java.util.ArrayList;
 
-public class even_or_odd_in_array {
+public class EvenOrOdd {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
