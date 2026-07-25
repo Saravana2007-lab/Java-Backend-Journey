@@ -1,7 +1,7 @@
 //palindrom with string
 //author - Saravana
 import java.util.Scanner;
-public class palindrom {
+public class Palindrom {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("enter an word");
