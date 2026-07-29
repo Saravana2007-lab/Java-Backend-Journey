@@ -7,7 +7,11 @@ void check(String exp){
 for (int i = 0; i < exp.length(); i++) {
 
     char ch = exp.charAt(i);
+if (ch == '(') {
 
+    b.push(ch);
+
+}
 }
     }
 }

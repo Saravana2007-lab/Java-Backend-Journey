@@ -1,4 +1,4 @@
-public class check_rows_coloms {
+public class CheckRowsColumns {
 
 	public static int calculateMatrixSum(int[][] matrix) {
 		int sum = 0;
