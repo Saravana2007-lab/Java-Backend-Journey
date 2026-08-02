@@ -1,4 +1,4 @@
-package Collections.Vector;
+package Collections.Stack;
 import java.util.Stack;
 
 class Conversion {
