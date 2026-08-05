@@ -1,8 +1,5 @@
 package Collections.Set;
-
 import java.util.LinkedHashSet;
-import java.util.Scanner;
-import java.util.concurrent.TransferQueue;
 
 class Transaction {
     String id;
@@ -12,42 +9,58 @@ class Transaction {
         this.id = id;
         this.name = name;
     }
-void setId(String id){
-this.id = id;
-}
-void setname(String name){
-this.name = name;
-}
+
     @Override
     public String toString() {
-        return "Name : " + name +
-               "\nId : " + id;
+        return "Name : " + name + ", Id : " + id;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        System.out.println("equals() called: comparing " + this + " with " + obj);
+
+        if (this == obj) {
+            System.out.println(" -> Same reference (this == obj)");
+            return true;
+        }
+        if (!(obj instanceof Transaction)) {
+            System.out.println(" -> Not a Transaction object");
+            return false;
+        }
+        Transaction t = (Transaction) obj;
+        boolean result = id.equals(t.id) && name.equals(t.name);
+        System.out.println(" -> Field comparison result: " + result);
+        return result;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = id.hashCode() + name.hashCode();
+        System.out.println("hashCode() called for " + this + " -> " + hash);
+        return hash;
     }
 }
 
 public class UniqueTransactionHistory {
     public static void main(String[] args) {
+        Transaction t1 = new Transaction("T001", "Payment");
+        Transaction t2 = new Transaction("T001", "Payment"); // duplicate of t1
+        Transaction t3 = new Transaction("T002", "Refund");
+
         LinkedHashSet<Transaction> set = new LinkedHashSet<>();
-        Scanner sc = new Scanner(System.in);
-        int count = 0;
-        System.out.print("Enter number of transactions: ");
-        int n = sc.nextInt();
-        sc.nextLine(); 
-        for (int i = 0; i < n; i++) {
-            System.out.print("Enter Transaction ID: ");
-            String id = sc.nextLine();
 
-            System.out.print("Enter Transaction Name: ");
-            String name = sc.nextLine();
-            for(Transaction t: set){
-            if(t.id.contains(id)){
-                count ++;
-            }
-        }
+        System.out.println("\nAdding t1...");
+        set.add(t1);
 
-            set.add(new Transaction(id, name));
+        System.out.println("\nAdding t2...");
+        set.add(t2);
+
+        System.out.println("\nAdding t3...");
+        set.add(t3);
+
+        System.out.println("\nFinal Set Contents:");
+        for (Transaction t : set) {
+            System.out.println(t);
         }
-System.out.println("duplicate requests were ignored "+ count);
-System.out.println("The transaction without the dupilicates");
     }
 }
