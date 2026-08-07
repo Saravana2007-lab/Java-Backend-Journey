@@ -35,12 +35,23 @@ class RadioPlayer implements Playable{
         System.out.println("RadioPlayer is paused");
     }
 }
+class youtube implements Playable{
+    @Override
+    public void play(){
+        System.out.println("youtube is playing");
+    }
+    @Override 
+    public void pause(){
+        System.out.println("youtube is paused");
+    }
+}
 public class MediaPlayerSystem {
  public static void main(String[] args) {
     Playable[] music ={
         new MP3Player(),
         new VideoPlayer(),
-        new RadioPlayer()
+        new RadioPlayer(),
+        new youtube()
     };
 
     for(Playable p : music){
