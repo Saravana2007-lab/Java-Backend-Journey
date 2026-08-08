@@ -1,13 +1,15 @@
 package Projects.src.model;
 
 public class Account {
+    private String Name;
     private String accountNumber;
     private double balance;
     private Customer customer;
     private String accountType;
     private String status;
 
-    public Account(String accountNumber, double balance, Customer customer, String accountType, String status) {
+    public Account(String Name,String accountNumber, double balance, Customer customer, String accountType, String status) {
+        this.Name = Name;
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customer = customer;

@@ -6,7 +6,8 @@ import Projects.src.model.Customer;
 
 public class CustomerRepository {
  ArrayList<Customer> customersAccount  = new ArrayList<>();
- 
-
+ void addcustomer(Customer customer){
+    customersAccount.add(customer);
+ }
 
 }
