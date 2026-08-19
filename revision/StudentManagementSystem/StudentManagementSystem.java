@@ -16,6 +16,7 @@ public class StudentManagementSystem {
 
         System.out.print("Number of students: ");
         int n = sc.nextInt();
+        sc.nextLine();
 
         Student[] students = new Student[n];
 
@@ -24,7 +25,7 @@ public class StudentManagementSystem {
 
             System.out.println("\nStudent " + (i + 1));
             System.out.print("Name: ");
-            students[i].name = sc.next();
+            students[i].name = sc.nextLine();
 
             System.out.print("Age: ");
             students[i].age = sc.nextInt();
@@ -32,7 +33,15 @@ public class StudentManagementSystem {
             int total = 0;
             System.out.println("Enter 3 subject marks:");
             for (int j = 0; j < 3; j++) {
-                students[i].marks[j] = sc.nextInt();
+                int mark;
+                do {
+                    mark = sc.nextInt();
+                    if (mark < 0 || mark > 100) {
+                        System.out.print("Invalid mark. Enter a mark from 0 to 100: ");
+                    }
+                } while (mark < 0 || mark > 100);
+
+                students[i].marks[j] = mark;
                 total += students[i].marks[j];
             }
 
@@ -45,13 +54,36 @@ public class StudentManagementSystem {
             System.out.println(s.name + " | Age: " + s.age + " | Avg: " + s.average + " | " + s.result);
         }
 
-        Student topper = students[0];
+        if (students.length > 0) {
+            Student topper = students[0];
+            for (Student s : students) {
+                if (s.average > topper.average) {
+                    topper = s;
+                }
+            }
+            System.out.println("\nTopper: " + topper.name + " with Avg " + topper.average);
+        } else {
+            System.out.println("\nNo students available.");
+        }
+
+        sc.nextLine();
+        System.out.print("Enter student name to search: ");
+        String searchName = sc.nextLine();
+        boolean found = false;
         for (Student s : students) {
-            if (s.average > topper.average) {
-                topper = s;
+            if (s.name.equalsIgnoreCase(searchName)) {
+                System.out.println("Student found");
+                System.out.println("Name: " + s.name);
+                System.out.println("Age: " + s.age);
+                System.out.printf("Average: %.2f%n", s.average);
+                System.out.println("Result: " + s.result);
+                found = true;
+                break;
             }
         }
-        System.out.println("\nTopper: " + topper.name + " with Avg " + topper.average);
+        if (!found) {
+            System.out.println("Student not found");
+        }
 
         sc.close();
     }
