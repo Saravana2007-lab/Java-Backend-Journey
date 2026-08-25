@@ -30,7 +30,6 @@ public class StudentManagementSystem {
             System.out.print("Age: ");
             students[i].age = sc.nextInt();
 
-            int total = 0;
             System.out.println("Enter 3 subject marks:");
             for (int j = 0; j < 3; j++) {
                 int mark;
@@ -42,11 +41,10 @@ public class StudentManagementSystem {
                 } while (mark < 0 || mark > 100);
 
                 students[i].marks[j] = mark;
-                total += students[i].marks[j];
             }
 
-            students[i].average = total / 3.0;
-            students[i].result = (students[i].average >= 40 && allPassed(students[i].marks)) ? "Pass" : "Fail";
+            students[i].average = calculateAverage(students[i].marks);
+            students[i].result = determineResult(students[i].average, students[i].marks);
         }
 
         System.out.println("\n--- Student Details ---");
@@ -54,13 +52,8 @@ public class StudentManagementSystem {
             System.out.println(s.name + " | Age: " + s.age + " | Avg: " + s.average + " | " + s.result);
         }
 
-        if (students.length > 0) {
-            Student topper = students[0];
-            for (Student s : students) {
-                if (s.average > topper.average) {
-                    topper = s;
-                }
-            }
+        if (getStudentCount(students) > 0) {
+            Student topper = findTopper(students);
             System.out.println("\nTopper: " + topper.name + " with Avg " + topper.average);
         } else {
             System.out.println("\nNo students available.");
@@ -69,23 +62,53 @@ public class StudentManagementSystem {
         sc.nextLine();
         System.out.print("Enter student name to search: ");
         String searchName = sc.nextLine();
-        boolean found = false;
-        for (Student s : students) {
-            if (s.name.equalsIgnoreCase(searchName)) {
-                System.out.println("Student found");
-                System.out.println("Name: " + s.name);
-                System.out.println("Age: " + s.age);
-                System.out.printf("Average: %.2f%n", s.average);
-                System.out.println("Result: " + s.result);
-                found = true;
-                break;
-            }
-        }
-        if (!found) {
+        Student foundStudent = searchStudent(students, searchName);
+        if (foundStudent != null) {
+            System.out.println("Student found");
+            System.out.println("Name: " + foundStudent.name);
+            System.out.println("Age: " + foundStudent.age);
+            System.out.printf("Average: %.2f%n", foundStudent.average);
+            System.out.println("Result: " + foundStudent.result);
+        } else {
             System.out.println("Student not found");
         }
 
         sc.close();
+    }
+
+    static double calculateAverage(int[] marks) {
+        int total = 0;
+        for (int mark : marks) {
+            total += mark;
+        }
+        return (double) total / marks.length;
+    }
+
+    static String determineResult(double average, int[] marks) {
+        return average >= 40 && allPassed(marks) ? "Pass" : "Fail";
+    }
+
+    static Student findTopper(Student[] students) {
+        Student topper = students[0];
+        for (Student student : students) {
+            if (student.average > topper.average) {
+                topper = student;
+            }
+        }
+        return topper;
+    }
+
+    static Student searchStudent(Student[] students, String searchName) {
+        for (Student student : students) {
+            if (student.name.toLowerCase().contains(searchName.toLowerCase())) {
+                return student;
+            }
+        }
+        return null;
+    }
+
+    static int getStudentCount(Student[] students) {
+        return students.length;
     }
 
     static boolean allPassed(int[] marks) {
