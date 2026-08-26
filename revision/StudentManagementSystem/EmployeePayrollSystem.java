@@ -8,11 +8,10 @@ public class EmployeePayrollSystem {
     private Scanner scanner;
     
     public EmployeePayrollSystem() {
-        scanner = new Scanner(System.in);
+       Scanner scanner = new Scanner(System.in);
         connectDatabase();
     }
     
-    // Connect to database
     public void connectDatabase() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -24,7 +23,6 @@ public class EmployeePayrollSystem {
         }
     }
     
-    // Create employee table
     public void createTable() {
         try {
             String sql = "CREATE TABLE IF NOT EXISTS employees (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50), salary DOUBLE, department VARCHAR(30))";
@@ -35,7 +33,6 @@ public class EmployeePayrollSystem {
         }
     }
     
-    // Add employee
     public void addEmployee() {
         try {
             System.out.print("Enter name: ");
@@ -56,7 +53,6 @@ public class EmployeePayrollSystem {
         }
     }
     
-    // View all employees
     public void viewEmployees() {
         try {
             String sql = "SELECT * FROM employees";
@@ -75,7 +71,6 @@ public class EmployeePayrollSystem {
         }
     }
     
-    // Search employee by ID
     public void searchEmployee() {
         try {
             System.out.print("Enter employee ID: ");
@@ -99,7 +94,6 @@ public class EmployeePayrollSystem {
         }
     }
     
-    // Update salary
     public void updateSalary() {
         try {
             System.out.print("Enter employee ID: ");
@@ -122,7 +116,6 @@ public class EmployeePayrollSystem {
         }
     }
     
-    // Delete employee
     public void deleteEmployee() {
         try {
             System.out.print("Enter employee ID to delete: ");
@@ -142,7 +135,7 @@ public class EmployeePayrollSystem {
         }
     }
     
-    // Menu
+    
     public void menu() {
         boolean exit = false;
         
@@ -185,7 +178,6 @@ public class EmployeePayrollSystem {
         closeConnection();
     }
     
-    // Close connection
     public void closeConnection() {
         try {
             connection.close();
@@ -194,7 +186,6 @@ public class EmployeePayrollSystem {
             System.out.println("Error: " + e.getMessage());
         }
     }
-    
     public static void main(String[] args) {
         EmployeePayrollSystem system = new EmployeePayrollSystem();
         system.menu();
