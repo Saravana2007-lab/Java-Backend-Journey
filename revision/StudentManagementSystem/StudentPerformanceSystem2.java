@@ -11,7 +11,6 @@ public class StudentPerformanceSystem2 {
         String grade;
     }
 
-    // ✅ Separate function to calculate average and grade
     static void calculatePerformance(Student student) {
         double total = 0;
         for (double mark : student.marks) {
