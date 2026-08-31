@@ -1,5 +1,6 @@
 
-package revision.StudentMangementSystem;
+package revision.StudentManagementSystem2;
+
 import java.util.Scanner;
 
 public class StudentPerformanceSystem2 {
@@ -20,11 +21,32 @@ public class StudentPerformanceSystem2 {
         student.grade = getGrade(student.average);
     }
 
+    static Student findTopper(Student[] students) {
+        Student topper = students[0];
+        for (Student student : students) {
+            if (student.average > topper.average) {
+                topper = student;
+            }
+        }
+        return topper;
+    }
+
+    static boolean searchStudent(Student[] students, String searchName) {
+        String search = searchName.toLowerCase();
+        for (Student student : students) {
+            if (student.name.toLowerCase().contains(search)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Number of students: ");
         int n = sc.nextInt();
+        sc.nextLine();
 
         Student[] students = new Student[n];
 
@@ -33,15 +55,17 @@ public class StudentPerformanceSystem2 {
 
             System.out.println("\nStudent " + (i + 1));
             System.out.print("Name: ");
-            students[i].name = sc.next();
+            students[i].name = sc.nextLine();
 
             System.out.print("Roll number: ");
             students[i].rollNumber = sc.nextInt();
+            sc.nextLine();
 
             System.out.println("Enter marks for 3 subjects:");
             for (int j = 0; j < 3; j++) {
                 students[i].marks[j] = sc.nextDouble();
             }
+            sc.nextLine();
 
             calculatePerformance(students[i]);
         }
@@ -52,15 +76,18 @@ public class StudentPerformanceSystem2 {
                     student.name, student.rollNumber, student.average, student.grade);
         }
 
-        Student topper = students[0];
-        for (Student student : students) {
-            if (student.average > topper.average) {
-                topper = student;
-            }
-        }
-
+        Student topper = findTopper(students);
         System.out.printf("\nTopper: %s with an average of %.2f%n",
                 topper.name, topper.average);
+
+        System.out.print("\nSearch student name: ");
+        String searchName = sc.nextLine();
+
+        if (searchStudent(students, searchName)) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not Found");
+        }
 
         sc.close();
     }
