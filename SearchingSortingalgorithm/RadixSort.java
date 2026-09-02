@@ -15,8 +15,7 @@ public class RadixSort {
     static void countingSort(int[] arr, int exp) {
         int n = arr.length;
         int[] output = new int[n];
-        int[] count = new int[10]; // For digits 0-9
-        
+        int[] count = new int[10];        
         for (int i = 0; i < n; i++) {
             count[(arr[i] / exp) % 10]++;
         }
