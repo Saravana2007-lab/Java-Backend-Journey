@@ -2,17 +2,15 @@ package Projects.ExpenseTracker.model;
 
 import java.sql.Date;
 
-public class expense {
+public class Expense {
     private long expenseId;
     private double amount;
     private String category;
     private String description;
     private Date expenseDate;
 
-    public expense() {
-    }
 
-    public expense(long expenseId, double amount, String category, String description, Date expenseDate) {
+    public Expense(long expenseId, double amount, String category, String description, Date expenseDate) {
         this.expenseId = expenseId;
         this.amount = amount;
         this.category = category;
