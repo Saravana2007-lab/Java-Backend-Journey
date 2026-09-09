@@ -11,10 +11,10 @@ public class Palindrom {
             rev += word.charAt(i);
         }
         if(word.equals(rev)){
-            System.out.println("it is an palindrom");
+            System.out.println("it is an palindrom  ");
         }
                else{
-            System.out.println("it is not an palindrom");
+            System.out.println("it is not an palindrom  ");
         }
         sc.close();
     }
