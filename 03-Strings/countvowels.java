@@ -7,15 +7,20 @@ public class countvowels {
         System.out.println("enter an word");
         String word = sc.nextLine();
         int vowels = 0;
+        int consonants = 0;
         for(int i = 0; i < word.length(); i++){
             char ch = word.charAt(i);
             if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
                 vowels++;
             }
+            else{
+                consonants++;
+            }
         }
 
         
         System.out.println("Number of vowels: " + vowels);
+        System.out.println("Number of consonants "+ consonants);
         sc.close();
     }
 }
