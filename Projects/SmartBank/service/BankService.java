@@ -39,16 +39,47 @@ public boolean createAccount(Account account){
      return true;
      
 }
+
 public Account getAccount(String accountNumber) {
         if (accounts.containsKey(accountNumber)) {
             return accounts.get(accountNumber); 
         }
         return null; 
     }
-public Account deposit(String accountNumber, BigDecimal amount){
-          if (accounts.containsKey(accountNumber)) {
-            accounts.getBalance(accountNumber)
-        }
-        return null; 
+
+public boolean deposit(String accountNumber, BigDecimal amount) {
+     if(amount.compareTo(BigDecimal.ZERO) <= 0 ){
+        System.out.println("The amount should be greater than 0");
+    }
+    if (accounts.containsKey(accountNumber)) {
+        Account account = accounts.get(accountNumber);
+        BigDecimal newBalance = account.getBalance().add(amount);
+        account.setBalance(newBalance);
+        System.out.println("The transaction was completed");
+        return true;
+    }
+    else{
+    System.out.println("The account number was wrong");
+    return false; 
+    }
 }
+public boolean withdraw(String accountNumber, BigDecimal amount) {
+     if(amount.compareTo(BigDecimal.ZERO) <= 0 ){
+        System.out.println("The amount should be greater than 0");
+    }
+
+    if(accounts.containsKey(accountNumber)){
+        Account account = accounts.get(accountNumber);
+        BigDecimal newbalance = account.getBalance().subtract(amount);
+        account.setBalance(newbalance);
+         System.out.println("The transaction was completed");
+         return true;
+    }
+  else{
+    System.out.println("The account number was wrong");
+    return false; 
+    }
+}
+
+
 }
