@@ -25,5 +25,8 @@ System.out.println("\n");
 System.out.println(bankService.getAccount("A1001"));
 System.out.println("Customer created: " + customerCreated);
 System.out.println("Account created: " + accountCreated);
+bankService.deposit("A1001",new BigDecimal ("6789"));
+bankService.withdraw("A1001", new BigDecimal("789"));
+bankService.printAllAccounts();
     }
 }

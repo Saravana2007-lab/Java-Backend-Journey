@@ -50,36 +50,46 @@ public Account getAccount(String accountNumber) {
 public boolean deposit(String accountNumber, BigDecimal amount) {
      if(amount.compareTo(BigDecimal.ZERO) <= 0 ){
         System.out.println("The amount should be greater than 0");
+        return false;
     }
-    if (accounts.containsKey(accountNumber)) {
-        Account account = accounts.get(accountNumber);
-        BigDecimal newBalance = account.getBalance().add(amount);
-        account.setBalance(newBalance);
-        System.out.println("The transaction was completed");
-        return true;
+    if (!accounts.containsKey(accountNumber)) {
+        System.out.println("The account number was wrong");
+        return false;
     }
-    else{
-    System.out.println("The account number was wrong");
-    return false; 
-    }
+
+    Account account = accounts.get(accountNumber);
+    BigDecimal newBalance = account.getBalance().add(amount);
+    account.setBalance(newBalance);
+    System.out.println("The transaction was completed");
+    return true;
 }
 public boolean withdraw(String accountNumber, BigDecimal amount) {
      if(amount.compareTo(BigDecimal.ZERO) <= 0 ){
         System.out.println("The amount should be greater than 0");
+        return false;
     }
 
-    if(accounts.containsKey(accountNumber)){
-        Account account = accounts.get(accountNumber);
-        BigDecimal newbalance = account.getBalance().subtract(amount);
-        account.setBalance(newbalance);
-         System.out.println("The transaction was completed");
-         return true;
+    if(!accounts.containsKey(accountNumber)){
+        System.out.println("The account number was wrong");
+        return false;
     }
-  else{
-    System.out.println("The account number was wrong");
-    return false; 
+
+    Account account = accounts.get(accountNumber);
+    if (amount.compareTo(account.getBalance()) > 0) {
+        return false;
+    }
+
+    BigDecimal newbalance = account.getBalance().subtract(amount);
+    account.setBalance(newbalance);
+    System.out.println("The transaction was completed");
+    return true;
+}
+public void printAllAccounts() {
+    for (Account acc : accounts.values()) {
+        System.out.println(acc);
     }
 }
+
 
 
 }
