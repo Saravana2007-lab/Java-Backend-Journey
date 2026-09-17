@@ -70,7 +70,6 @@ void Update(String id) {
                 System.out.println("Found: " + line);
                 found = true;
 
-                // Split into parts
                 String[] parts = line.split(",");
 
                 System.out.println("Which field do you want to update? (name/age/course/marks)");
