@@ -3,7 +3,7 @@ package SearchingSortingalgorithm;
 public class MergeSort {
 
     public static void mergeSort(int[] arr, int left, int right) {
-
+        
         if (left < right) {
 
             int mid = left+(left + right) / 2;

@@ -9,7 +9,6 @@ class MinimumFinder {
         return min;
     }
 }
-
 public class FindMinimum {
     public static void main(String[] args) {
         MinimumFinder m = new MinimumFinder();
