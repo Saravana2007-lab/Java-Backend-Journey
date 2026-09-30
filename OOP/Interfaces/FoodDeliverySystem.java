@@ -54,7 +54,7 @@ public class FoodDeliverySystem {
             d.deliverOrder();
         }
         
-        System.out.println("-------------------------");
+        System.out.println("-----------------------");
   
         Trackable[] trackers = {
             new DroneDelivery(),
