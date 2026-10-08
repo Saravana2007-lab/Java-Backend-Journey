@@ -2,13 +2,18 @@ public class Employee_Salary_Calculator {
     public int salary(int basicSalary){
         return basicSalary;
     }
+
+    
     public int salary(int basicSalary, int bonus){
         return basicSalary+bonus;
     }
+
+
     public int salary(int basicSalary, int bonus, int overtimePay){
         return basicSalary+bonus+overtimePay;
     }
     public static void main(String[] args){
+
         Employee_Salary_Calculator calc = new Employee_Salary_Calculator();
         
         int result1 = calc.salary(5000);
