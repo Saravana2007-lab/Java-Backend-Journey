@@ -21,9 +21,20 @@ public static void main(String[] args) {
             "Nihal",
             'a'
         );
+
+        question q3 = new question(
+            "Which data structure follows the LIFO principle?",
+            "Stack",
+            "Queue",
+            "Array",
+            "LinkedList",
+            'a'
+        );
+
 QuestionLists quiz = new QuestionLists();
 quiz.NewQuestion(q1);
 quiz.NewQuestion(q2);
+quiz.NewQuestion(q3);
 quiz.display();
  quiz.SerachQuestion("Who is the Strong");
     }
