@@ -2,23 +2,28 @@
 public class second_largest_element { public static void main(String[] args) {
         int[] a = {3, 4, 5, 6, 7};
 
-        int largest = a[0];
-        int secondLargest = a[0];
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+        boolean hasLargest = false;
+        boolean hasSecondLargest = false;
 
-        // Find largest
         for (int i = 0; i < a.length; i++) {
-            if (a[i] > largest) {
+            if (!hasLargest || a[i] > largest) {
+                if (hasLargest) {
+                    secondLargest = largest;
+                    hasSecondLargest = true;
+                }
                 largest = a[i];
-            }
-        }
-
-        // Find second largest
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] > secondLargest && a[i] < largest) {
+                hasLargest = true;
+            } else if (a[i] < largest && (!hasSecondLargest || a[i] > secondLargest)) {
                 secondLargest = a[i];
+                hasSecondLargest = true;
             }
         }
-
-        System.out.println("Second largest = " + secondLargest);
+        if (hasSecondLargest) {
+            System.out.println("Second largest = " + secondLargest);
+        } else {
+            System.out.println("No second largest distinct element");
+        }
     }
 }
