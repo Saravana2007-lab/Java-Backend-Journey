@@ -21,18 +21,18 @@ public class EvenOrOdd {
         }
           sc.close();
     ArrayList<Integer> even = new ArrayList<>();
-ArrayList<Integer> odd = new ArrayList<>();
+ArrayList<Integer> Odd = new ArrayList<>();
 
 for (int i = 0; i < a; i++) {
     if (b[i] % 2 == 0) {
         even.add(b[i]);
     } else {
-        odd.add(b[i]);
+        Odd.add(b[i]);
     }
 }
 
 System.out.println("Even numbers: " + even);
-System.out.println("Odd numbers: " + odd);   
+System.out.println("Odd numbers: " + Odd);   
     }
   
 
