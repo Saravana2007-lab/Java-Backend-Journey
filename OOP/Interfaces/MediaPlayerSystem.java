@@ -15,6 +15,7 @@ class MP3Player implements Playable{
         System.out.println("mp3 is paused");
     }
 }
+
 class VideoPlayer implements Playable{
     @Override
     public void play(){
@@ -25,6 +26,7 @@ class VideoPlayer implements Playable{
         System.out.println("VideoPlayer is paused");
     }
 }
+
 class RadioPlayer implements Playable{
     @Override
     public void play(){
@@ -35,6 +37,7 @@ class RadioPlayer implements Playable{
         System.out.println("RadioPlayer is paused");
     }
 }
+
 class youtube implements Playable{
     @Override
     public void play(){
